@@ -30,6 +30,7 @@ a{
 /* HEADER */
 header{
   position: fixed;
+  z-index: 999;
 
   top: 0;
   left: 0;
@@ -244,6 +245,40 @@ input[type="password"]{
 
 /* --------------------------------------- */
 
+/* PARTNERS' LOGOS */
+#partner-logos{
+  text-align: center;
+  background-color: #f3f5f9;
+
+  padding: 50px 0;
+}
+
+.logos-list ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos-list ul li{
+  width: calc((100% - 50px) / 6);
+  margin-right: 10px;
+}
+
+.logos-list ul li img{
+  width: 100%;
+}
+
+#partner-logos h6{
+  font-size: 1.3rem;
+  color: #6f7b97;
+}
+
+#partner-logos a{
+  font-size: 1.3rem;
+  color: #006aff;
+}
+/* --------------------------------------- */
+
 /* EXTRA-LARGE */
 @media all and (min-width: 1200px) {
   .container{
@@ -337,7 +372,23 @@ input[type="password"]{
   .jumbo-text{
     text-align: center;
 
+    padding-right: 0;
+
     margin-bottom: 30px;
+  }
+
+  /* --------------------------------------- */
+
+  /* PARTNERS' LOGOS */
+  .logos-list ul{
+    flex-wrap: wrap;
+  }
+
+  .logos-list ul li{
+    flex: 50%;
+
+    margin-right: 0;
+    padding: 0 20px;
   }
 }
 
@@ -376,6 +427,22 @@ input[type="password"]{
   .jumbo-text{
     text-align: center;
 
+    padding-right: 0;
+
     margin-bottom: 30px;
+  }
+
+  /* --------------------------------------- */
+
+  /* PARTNERS' LOGOS */
+  .logos-list ul{
+    flex-wrap: wrap;
+  }
+
+  .logos-list ul li{
+    flex: 50%;
+
+    margin-right: 0;
+    padding: 0 20px;
   }
 }
